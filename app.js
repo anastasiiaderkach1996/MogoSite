@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 let db; 
 
+const app = express();
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
